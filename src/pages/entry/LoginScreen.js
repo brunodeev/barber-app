@@ -2,7 +2,12 @@ import React from 'react';
 import { Image, StyleSheet, Text, SafeAreaView, TextInput, View, TouchableOpacity, Platform, KeyboardAvoidingView, ScrollView } from 'react-native';
 import barber from '../../assets/barber.png';
 
+import { useNavigation } from '@react-navigation/native';
+
 const LoginScreen = () => {
+
+    const navigation = useNavigation();
+
     return (
         <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
             <SafeAreaView style={styles.container}>
@@ -17,7 +22,7 @@ const LoginScreen = () => {
                             <TouchableOpacity style={styles.forget}>
                                 <Text style={{color: '#b1b1b1', textAlign: 'right'}}>Esqueci a senha</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.button}>
+                            <TouchableOpacity style={styles.button} onPress={() => {navigation.navigate('BarbersPage')}}>
                                 <Text style={{ color: '#FFF', fontSize: 17 }}>Entrar</Text>
                             </TouchableOpacity>
                         </View>
