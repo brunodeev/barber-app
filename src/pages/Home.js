@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 
-const Home = () => {
+const Home = (barber) => {
+
+  const route = useRoute();
+
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Bem vindo!! Voce escolheu o {route.params?.name}</Text>
     </View>
   );
 };

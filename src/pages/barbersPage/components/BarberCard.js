@@ -1,9 +1,14 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-const BarberCard = barber => {
+import { useNavigation } from '@react-navigation/native';
+
+const BarberCard = (barber) => {
+
+    const navigation = useNavigation();
+
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={() => {navigation.navigate('Home', {name: barber.name})}}>
             <View style={styles.imageContainer}>
                 <Image source={barber.image} style={styles.image}/>
             </View>

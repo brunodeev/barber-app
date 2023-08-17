@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './src/pages/entry/LoginScreen';
 import BarbersPage from './src/pages/barbersPage/BarbersPage';
+import Home from './src/pages/Home';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,11 @@ function App() {
         <Stack.Screen
           name='BarbersPage'
           component={BarbersPage}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name='Home'
+          component={Home}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
