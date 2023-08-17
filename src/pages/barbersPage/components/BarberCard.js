@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const BarberCard = barber => {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container}>
             <View style={styles.imageContainer}>
                 <Image source={barber.image} style={styles.image}/>
             </View>
-            <Text>{barber.name}</Text>
-        </View>
+            <Text style={styles.text}>{barber.name}</Text>
+        </TouchableOpacity>
     );
 };
 
@@ -20,20 +20,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        paddingHorizontal: 14,
     },
     image:{
-        height:50,
-        width: 50,
+        height:100,
+        width: 100,
         borderRadius: 50,
+        marginBottom: 10,
     },
     imageContainer: {
-        borderRadius:50,
-        shadowColor: '#000',
-        shadowOpacity: 0.2,
-        shadowOffset:{
-            height: 2,
-            width: 0,
-        },
-        shadowRadius: 7,
+        height: undefined,
+        width: 100,
+        borderRadius: 100,
+    },
+    text: {
+        fontSize: 20,
     },
 });
