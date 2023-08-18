@@ -9,6 +9,10 @@ const barbers = [
         name: 'Pedro',
         image: barbeiro,
     },
+    {
+        name: 'Bruno',
+        image: barbeiro,
+    },
 ];
 
 export default barbers;

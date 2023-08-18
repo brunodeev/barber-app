@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
-const Home = (barber) => {
+const Home = () => {
 
   const route = useRoute();
 
   return (
-    <View>
+    <SafeAreaView>
       <Text>Bem vindo!! Voce escolheu o {route.params?.name}</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
