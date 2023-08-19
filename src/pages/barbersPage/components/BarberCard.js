@@ -8,7 +8,7 @@ const BarberCard = (barber) => {
     const navigation = useNavigation();
 
     return (
-        <TouchableOpacity style={styles.container} onPress={() => {navigation.navigate('Home', {name: barber.name})}}>
+        <TouchableOpacity style={styles.container} onPress={() => {navigation.navigate('Home', {name: barber.name, image: barber.image})}}>
             <View style={styles.imageContainer}>
                 <Image source={barber.image} style={styles.image}/>
             </View>
