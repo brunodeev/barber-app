@@ -1,4 +1,4 @@
-import barbeiro from '../assets/barbeiro.jpeg';
+import barbeiro from '../assets/images/barbeiro.jpeg';
 
 const barbers = [
     {

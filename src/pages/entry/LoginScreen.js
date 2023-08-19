@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, SafeAreaView, TextInput, View, TouchableOpacity, Platform, KeyboardAvoidingView, ScrollView } from 'react-native';
-import barber from '../../assets/barber.png';
+import barber from '../../assets/images/barber.png';
 
 import { useNavigation } from '@react-navigation/native';
 
