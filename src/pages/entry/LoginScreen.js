@@ -81,14 +81,9 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         height: 45,
         paddingHorizontal: 12,
+        borderWidth: 1.5,
+        borderColor: 'rgba(40, 49, 48, .2)',
         marginBottom: 12,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 3,
-            height: 3,
-        },
-        shadowOpacity: .2,
-        shadowRadius: 2.5,
     },
     inputs: {
         flex: 1,
