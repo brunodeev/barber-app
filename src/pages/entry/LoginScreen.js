@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, SafeAreaView, TextInput, View, TouchableOpacity, Platform, KeyboardAvoidingView, ScrollView } from 'react-native';
 import logo from '../../assets/images/logo.png';
-
 import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {

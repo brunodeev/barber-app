@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
         borderRadius: 50,
     },
     imageContainer: {
-        borderWidth: 2.5,
-        borderColor: '#5e5141',
+        borderWidth: 2,
         height: undefined,
         width: undefined,
         borderRadius: 100,
+        borderColor: 'rgba(40, 49, 48, .8)',
     },
     text: {
         fontSize: 20,
