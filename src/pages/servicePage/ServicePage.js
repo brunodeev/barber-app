@@ -10,9 +10,8 @@ const ServicePage = () => {
 
     const renderItem = ({item}) => {
         const backgroundColor = item.name === selectedId ? '#4F4130' : '#61503C';
-        const color = item.name === selectedId ? 'white' : '#d2d2d2';
-        const weight = item.name === selectedId ? '500' : 'regular';
-        const selected = item.name === selectedId ? 
+        const color = item.name === selectedId ? 'white' : '#BBBBBB';
+        const disabled = item.name === selectedId ? true : false;
     
         return (
           <ServiceCard
@@ -20,7 +19,7 @@ const ServicePage = () => {
             onPress={() => setSelectedId(item.name)}
             backgroundColor={backgroundColor}
             textColor={color}
-            fontWeight={weight}
+            disabled={disabled}
           />
         );
       };
