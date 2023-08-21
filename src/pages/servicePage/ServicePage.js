@@ -28,7 +28,7 @@ const ServicePage = () => {
         <SafeAreaView style={styles.container}>
             <StatusBar style='light'/>
             <View style={styles.content}>
-                <Text style={{flex: 1}}>Escolha seu serviço</Text>
+                <Text style={styles.text}>Escolha seu serviço</Text>
                 <FlatList
                     data={services}
                     renderItem={renderItem}
@@ -54,6 +54,13 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         paddingHorizontal: 12,
+    },
+    text: {
+        color: 'white',
+        fontSize: 35,
+        paddingTop: 30,
+        paddingBottom: 100,
+        fontWeight: '600',
     },
     button: {
         width: '100%',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, SafeAreaView, TextInput, View, TouchableOpacity, Platform, KeyboardAvoidingView, ScrollView } from 'react-native';
-import barber from '../../assets/images/barber.png';
+import logo from '../../assets/images/logo.png';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -9,12 +9,13 @@ const LoginScreen = () => {
     const navigation = useNavigation();
 
     return (
+        <>
         <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-            <SafeAreaView style={styles.container}>
-                <ScrollView contentContainerStyle={styles.scrollView}>
+            <SafeAreaView style={styles.content}>
+                <ScrollView contentContainerStyle={styles.scrollView} scrollEnabled={false}>
                     <View style={styles.container}>
                         <View style={styles.imageContainer}>
-                            <Image source={barber} style={styles.image}/>
+                            <Image source={logo} style={styles.image}/>
                         </View>
                         <View style={styles.inputs}>
                             <TextInput placeholder='Email' onChange={() => {}} autoCorrect={false} keyboardType='email-address' style={styles.input}/>
@@ -26,17 +27,20 @@ const LoginScreen = () => {
                                 <Text style={{ color: '#FFF', fontSize: 17 }}>Entrar</Text>
                             </TouchableOpacity>
                         </View>
-                        <View style={styles.haveAccount}>
-                        <Text style={{color: '#b1b1b1'}}>Não tem uma conta? </Text>
-                        <TouchableOpacity>
-                            <Text>Crie uma</Text>
-                        </TouchableOpacity>
-                        </View>
                     </View>
                 </ScrollView>
+                
             </SafeAreaView>
+            
         </KeyboardAvoidingView>
-        
+
+        <SafeAreaView style={styles.haveAccount}>
+            <Text style={{color: '#b1b1b1'}}>Não tem uma conta? </Text>
+            <TouchableOpacity>
+                <Text>Crie uma</Text>
+            </TouchableOpacity>
+        </SafeAreaView>
+        </>
     );
 };
 
@@ -45,24 +49,29 @@ export default LoginScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#FFF',
     },
+    content: {
+        flex: 1,
+        width: '100%',
+    },
     imageContainer: {
-        marginBottom: 50,
+        flex: 1,
         height: 200,
-        width: 350,
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
     },
     image: {
-        height: undefined,
-        width: undefined,
-        flex: 1,
+        height: 200,
+        width: 200,
+        marginBottom: 30,
     },
     scrollView: {
         flex: 1,
-        marginTop: 20,
-        width: '100%',
         justifyContent: 'center',
     },
     input: {
@@ -82,9 +91,12 @@ const styles = StyleSheet.create({
         shadowRadius: 2.5,
     },
     inputs: {
+        flex: 1,
+        paddingTop: 20,
+        paddingHorizontal: 14,
         alignItems: 'center',
-        justifyContent: 'center',
-        width: '95%',
+        justifyContent: 'start',
+        width: '100%',
     },
     forget: {
         paddingRight: 14,
@@ -93,6 +105,7 @@ const styles = StyleSheet.create({
     haveAccount: {
         flexDirection: 'row',
         justifyContent: 'center',
+        backgroundColor: '#fff',
     },
     button: {
         width: '95%',

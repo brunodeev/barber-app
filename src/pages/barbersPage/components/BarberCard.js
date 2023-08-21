@@ -22,7 +22,7 @@ export default BarberCard;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#f0f0f0',
         alignItems: 'center',
         justifyContent: 'center',
         paddingHorizontal: 14,
@@ -31,11 +31,12 @@ const styles = StyleSheet.create({
         height:100,
         width: 100,
         borderRadius: 50,
-        marginBottom: 10,
     },
     imageContainer: {
+        borderWidth: 2.5,
+        borderColor: '#5e5141',
         height: undefined,
-        width: 100,
+        width: undefined,
         borderRadius: 100,
     },
     text: {
