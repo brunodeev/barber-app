@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import services from '../../mocks/services';
 import ServiceCard from './components/ServiceCard';
 
@@ -28,11 +28,16 @@ const ServicePage = () => {
         <SafeAreaView style={styles.container}>
             <StatusBar style='light'/>
             <View style={styles.content}>
-                <Text>Escolha seu serviço</Text>
+                <Text style={{flex: 1}}>Escolha seu serviço</Text>
                 <FlatList
                     data={services}
                     renderItem={renderItem}
+                    horizontal={false}
+                    scrollEnabled={false}
                 />
+                <TouchableOpacity style={styles.button}>
+                    <Text style={{color: 'white'}}>Próximo</Text>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
@@ -48,5 +53,14 @@ const styles = StyleSheet.create({
     content: {
         flex: 1,
         alignItems: 'center',
+        paddingHorizontal: 12,
+    },
+    button: {
+        width: '100%',
+        height: 50,
+        backgroundColor: '#283130',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 12,
     },
 });

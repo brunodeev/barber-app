@@ -15,13 +15,13 @@ const ServiceCard = ({service, backgroundColor, textColor, onPress, disabled}) =
 
 const styles = StyleSheet.create({
     container: {
-        height: 65,
-        width: 350,
+        height: 60,
+        width: 380,
         flexDirection: 'row',
         borderRadius: 12,
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 15,
+        paddingHorizontal: 14,
     },
     text: {
         fontSize: 25,
