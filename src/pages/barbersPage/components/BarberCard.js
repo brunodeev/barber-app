@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(40, 49, 48, .8)',
     },
     text: {
+        marginTop: 10,
         fontSize: 20,
     },
 });

@@ -5,9 +5,9 @@ import BarberCard from './components/BarberCard';
 
 const BarbersPage = () => {
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={styles.container} >
             <View style={styles.textView}>
-                <Text style={styles.text}>Selecione seu barbeiro:</Text>
+                <Text style={styles.text}>Selecione seu barbeiro</Text>
             </View>
             <View style={{height: 150,}}>
                 <FlatList

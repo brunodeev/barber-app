@@ -9,8 +9,8 @@ const ServicePage = () => {
     const [selectedId, setSelectedId] = useState();
 
     const renderItem = ({item}) => {
-        const backgroundColor = item.name === selectedId ? '#4F4130' : '#61503C';
-        const color = item.name === selectedId ? 'white' : '#BBBBBB';
+        const backgroundColor = item.name === selectedId ? '#222929' : '#262f2e';
+        const color = item.name === selectedId ? 'white' : '#AAAAAA';
         const disabled = item.name === selectedId ? true : false;
     
         return (
@@ -35,8 +35,8 @@ const ServicePage = () => {
                     horizontal={false}
                     scrollEnabled={false}
                 />
-                <TouchableOpacity style={styles.button}>
-                    <Text style={{color: 'white'}}>Próximo</Text>
+                <TouchableOpacity style={styles.button} activeOpacity={.8}>
+                    <Text style={{color: '#283130', fontSize: 18,}}>Próximo</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
@@ -48,7 +48,7 @@ export default ServicePage;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#61503C',
+        backgroundColor: '#283130',
     },
     content: {
         flex: 1,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontSize: 35,
+        fontSize: 28,
         paddingTop: 30,
         paddingBottom: 100,
         fontWeight: '600',
@@ -65,9 +65,10 @@ const styles = StyleSheet.create({
     button: {
         width: '100%',
         height: 50,
-        backgroundColor: '#283130',
+        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 12,
+        marginBottom: 50,
     },
 });
