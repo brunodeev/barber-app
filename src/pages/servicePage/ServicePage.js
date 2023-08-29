@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         paddingTop: 30,
         paddingBottom: 100,
         fontWeight: '600',
+        fontFamily: 'Manrope-Regular',
     },
     button: {
         width: '100%',

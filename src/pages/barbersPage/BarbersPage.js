@@ -38,8 +38,9 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     text: {
-        fontSize: 35,
+        fontSize: 30,
         fontWeight: '500',
+        fontFamily: 'Manrope-Regular',
     },
     list: {
         width: '100%',
