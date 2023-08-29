@@ -60,11 +60,10 @@ const styles = StyleSheet.create({
         fontSize: 28,
         paddingTop: 30,
         paddingBottom: 100,
-        fontWeight: '600',
-        fontFamily: 'Manrope-Regular',
+        fontFamily: 'Manrope-Medium',
     },
     button: {
-        width: '100%',
+        width: '95%',
         height: 50,
         backgroundColor: '#fff',
         alignItems: 'center',

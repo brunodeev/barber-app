@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const ServiceCard = ({service, backgroundColor, textColor, onPress, disabled}) => {
@@ -21,15 +21,16 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 14,
+        paddingHorizontal: 16,
         marginBottom: 3,
     },
     text: {
-        fontSize: 25,
+        fontSize: 23,
+        fontFamily: 'Manrope-Light',
     },
     price: {
         fontSize: 20,
-        fontWeight: 'regular',
+        fontFamily: 'Manrope-Light',
     },
 });
 
