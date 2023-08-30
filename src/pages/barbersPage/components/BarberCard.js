@@ -33,14 +33,15 @@ const styles = StyleSheet.create({
         borderRadius: 50,
     },
     imageContainer: {
-        borderWidth: 2,
+        borderWidth: 1.7,
         height: undefined,
         width: undefined,
         borderRadius: 100,
-        borderColor: 'rgba(40, 49, 48, .8)',
+        borderColor: 'rgba(40, 49, 48, .7)',
     },
     text: {
         marginTop: 10,
         fontSize: 20,
+        fontFamily: 'Manrope-Regular',
     },
 });

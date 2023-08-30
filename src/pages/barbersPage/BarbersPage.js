@@ -11,6 +11,7 @@ const BarbersPage = () => {
             </View>
             <View style={{height: 150,}}>
                 <FlatList
+                    scrollEnabled={false}
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
                     data={barbers}

@@ -20,10 +20,10 @@ const LoginScreen = () => {
                             <TextInput placeholder='Email' onChange={() => {}} autoCorrect={false} keyboardType='email-address' style={styles.input}/>
                             <TextInput placeholder='Senha' onChange={() => {}} secureTextEntry={true} style={styles.input}/>
                             <TouchableOpacity style={styles.forget}>
-                                <Text style={{color: '#b1b1b1', textAlign: 'right'}}>Esqueci a senha</Text>
+                                <Text style={{color: '#b1b1b1', textAlign: 'right', fontFamily: 'Manrope-Regular',}}>Esqueci a senha</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={styles.button} onPress={() => {navigation.navigate('BarbersPage')}}>
-                                <Text style={{ color: '#FFF', fontSize: 17 }}>Entrar</Text>
+                                <Text style={{ color: '#FFF', fontSize: 17, fontFamily: 'Manrope-Bold',}}>Entrar</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -34,9 +34,9 @@ const LoginScreen = () => {
         </KeyboardAvoidingView>
 
         <SafeAreaView style={styles.haveAccount}>
-            <Text style={{color: '#b1b1b1'}}>Não tem uma conta? </Text>
+            <Text style={{color: '#b1b1b1', fontFamily: 'Manrope-Regular',}}>Não tem uma conta? </Text>
             <TouchableOpacity>
-                <Text>Crie uma</Text>
+                <Text style={{fontFamily: 'Manrope-Regular'}}>Crie uma</Text>
             </TouchableOpacity>
         </SafeAreaView>
         </>
@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#e9e9e9',
         width: '95%',
         fontSize: 18,
+        fontFamily: 'Manrope-Regular',
         borderRadius: 15,
         height: 45,
         paddingHorizontal: 12,
@@ -99,6 +100,7 @@ const styles = StyleSheet.create({
     haveAccount: {
         flexDirection: 'row',
         justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#fff',
     },
     button: {

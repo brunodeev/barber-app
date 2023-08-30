@@ -35,7 +35,7 @@ const ServicePage = () => {
                     horizontal={false}
                     scrollEnabled={false}
                 />
-                <TouchableOpacity style={styles.button} activeOpacity={.8}>
+                <TouchableOpacity style={styles.button} activeOpacity={.8} onPress={() => {alert("unique test")}}>
                     <Text style={{color: '#283130', fontSize: 18,}}>Próximo</Text>
                 </TouchableOpacity>
             </View>
