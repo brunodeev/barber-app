@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         fontWeight: '500',
-        fontFamily: 'Manrope-Regular',
+        // fontFamily: 'Manrope-Regular',
     },
     list: {
         width: '100%',

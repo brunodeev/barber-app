@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 23,
-        fontFamily: 'Manrope-Light',
+        //fontFamily: 'Manrope-Light',
     },
     price: {
         fontSize: 20,
-        fontFamily: 'Manrope-Light',
+        //fontFamily: 'Manrope-Light',
     },
 });
 

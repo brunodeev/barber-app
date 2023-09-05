@@ -42,6 +42,6 @@ const styles = StyleSheet.create({
     text: {
         marginTop: 10,
         fontSize: 20,
-        fontFamily: 'Manrope-Regular',
+        // fontFamily: 'Manrope-Regular',
     },
 });

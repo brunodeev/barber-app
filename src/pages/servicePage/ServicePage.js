@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         fontSize: 28,
         paddingTop: 30,
         paddingBottom: 100,
-        fontFamily: 'Manrope-Medium',
+        //fontFamily: 'Manrope-Medium',
     },
     button: {
         width: '95%',
