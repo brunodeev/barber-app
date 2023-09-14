@@ -1,9 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LoginScreen from './src/pages/entry/LoginScreen';
-import BarbersPage from './src/pages/barbersPage/BarbersPage';
-import ServicePage from './src/pages/servicePage/ServicePage';
+import LoginPage from './src/pages/loginPage/LoginPage';
+import BasePage from './src/pages/basePage';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,17 +13,12 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen
           name='Login'
-          component={LoginScreen}
+          component={LoginPage}
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name='BarbersPage'
-          component={BarbersPage}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name='ServicePage'
-          component={ServicePage}
+          name='Base'
+          component={BasePage}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

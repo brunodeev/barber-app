@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, SafeAreaView, TextInput, View, TouchableOpacit
 import logo from '../../assets/images/logo.png';
 import { useNavigation } from '@react-navigation/native';
 
-const LoginScreen = () => {
+const LoginPage = () => {
 
     const navigation = useNavigation();
 
@@ -22,15 +22,13 @@ const LoginScreen = () => {
                             <TouchableOpacity style={styles.forget}>
                                 <Text style={{color: '#b1b1b1', textAlign: 'right'}}>Esqueci a senha</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.button} onPress={() => {navigation.navigate('BarbersPage')}}>
+                            <TouchableOpacity style={styles.button} onPress={() => {navigation.navigate('Base')}}>
                                 <Text style={{ color: '#FFF', fontSize: 17}}>Entrar</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
                 </ScrollView>
-                
             </SafeAreaView>
-            
         </KeyboardAvoidingView>
 
         <SafeAreaView style={styles.haveAccount}>
@@ -43,7 +41,7 @@ const LoginScreen = () => {
     );
 };
 
-export default LoginScreen;
+export default LoginPage;
 
 const styles = StyleSheet.create({
     container: {
